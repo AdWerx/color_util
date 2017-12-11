@@ -1,4 +1,4 @@
-require 'RMagick'
+require 'rmagick'
 require "color_util/version"
 
 # -*- encoding : utf-8 -*-
