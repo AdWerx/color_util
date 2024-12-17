@@ -13,7 +13,7 @@ class ColorUtil
       num_colors = num_colors.to_i
 
       palette = []
-      return [] unless File.exists?(file)
+      return [] unless File.exist?(file)
 
       image = Magick::Image.read(file).first
       image.quantize(num_colors).color_histogram.each do |c, n|
